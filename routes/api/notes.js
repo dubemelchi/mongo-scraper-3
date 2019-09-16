@@ -1,6 +1,8 @@
 var router = require("express").Router();
-var clearController = require("../../controllers/clear");
+var noteController = require("../../controllers/note");
 
-router.get("/", clearController.clearDB);
+router.get("/:id", noteController.find);
+router.post("/", noteController.create);
+router.delete("/:id", noteController.delete);
 
 module.exports = router;
