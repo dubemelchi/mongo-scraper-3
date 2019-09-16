@@ -27,7 +27,7 @@ app.set("view engine", "handlebars");
 app.use(routes);
 
 // this variable directs our app to use the database of the site we deployed on or, to use our locally hosted db "mongoHeadlines" lol
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://mel123:meldee@cluster0-xtipb.mongodb.net/test?retryWrites=true&w=majority";
 
 // our connection to Mongo db
 mongoose.connect(MONGODB_URI);
