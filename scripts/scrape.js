@@ -1,8 +1,6 @@
-// scrape script
-// =============
-
-// Require axios and cheerio, making our scrapes possible
+// Axios is a promise-based HTTP client that works both in the browser and in a node.js environment. It basically provides a single API for dealing with XMLHttpRequests and node's http interface.
 var axios = require("axios");
+// Cheerio is a Node.js library that helps interpret and analyze web pages using a jQuery-like syntax.
 var cheerio = require("cheerio");
 
 // This function will scrape the NYTimes website
