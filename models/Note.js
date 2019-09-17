@@ -4,8 +4,9 @@ var mongoose = require("mongoose");
 // creates schema
 var Schema = mongoose.Schema;
 
-// creats the notes schema
+// creates the notes schema
 var noteSchema = new Schema({
+  // this is the associated article that we want to attach the note to.
   _headlineId: {
     type: Schema.Types.ObjectId,
     ref: "Headline"
@@ -14,6 +15,7 @@ var noteSchema = new Schema({
     type: Date,
     default: Date.now
   },
+  // we set the users input as a string.
   noteText: String
 });
 
