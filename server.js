@@ -26,7 +26,7 @@ app.set("view engine", "handlebars");
 // this directs our app to have every request go through our route middleware
 app.use(routes);
 
-// this variable directs our app to use the database of the site we deployed on or, to use our locally hosted db "mongoHeadlines" lol
+// this variable directs our app to use MongoDB's CloudAtlas on Heroku or, to use our locally hosted db "mongoHeadlines" lol
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://mel123:meldee@cluster0-xtipb.mongodb.net/test?retryWrites=true&w=majority";
 
 // our connection to Mongo db
